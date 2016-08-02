@@ -100,7 +100,7 @@ namespace CopySelectionCoordsEffect
 
         private void CopySelectionCoords()
         {
-            string selectionCoords = selection.Left.ToString() + ", " + selection.Top.ToString() + ", " + selection.Width.ToString() + ", " + selection.Height.ToString();
+            string selectionCoords = selection.X.ToString() + "," + selection.Y.ToString();
             Clipboard.SetText(selectionCoords);
         }
 
